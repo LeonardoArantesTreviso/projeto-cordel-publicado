@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, 'sans-serif';
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: var(--fonte1);
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 10px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+header > p {
+    padding-bottom: 30px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.7em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section > p {
+    padding-bottom: 2em;
+    padding: 5px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color:rgb(51, 51, 51);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.39);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+    display: inline-block;
+    padding: 5px;
+}
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
